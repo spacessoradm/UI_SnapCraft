@@ -1,0 +1,36 @@
+.promotional-banner {
+  position: relative;
+  height: 40px; /* Set a fixed height to ensure consistency */
+  overflow: hidden; /* Hide any overflowing text */
+}
+
+.promotional-banner div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInOut 10s linear infinite;
+}
+
+.promotional-banner div:nth-child(1) {
+  animation-delay: 0s; /* First line starts immediately */
+}
+
+.promotional-banner div:nth-child(2) {
+  animation-delay: 5s; /* Second line starts after the first finishes */
+}
+
+@keyframes fadeInOut {
+  0%, 25% {
+    opacity: 1; /* Fully visible */
+  }
+  50%, 100% {
+    opacity: 0; /* Fully hidden */
+  }
+}
+
+.global-font {
+  font-family: "Courier New", Courier, monospace;
+}

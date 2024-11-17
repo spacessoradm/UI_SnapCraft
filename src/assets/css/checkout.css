@@ -1,0 +1,23 @@
+/* Global input field styles */
+input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #6366f1; /* Blue for focus state */
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2); /* Subtle blue shadow */
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
